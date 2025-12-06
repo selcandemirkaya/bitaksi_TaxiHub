@@ -17,30 +17,8 @@ The project consists of two main components:
 - Working with MongoDB Atlas connection
   
 ## Project Structure
-  bitaksi_TaxiHub/
-│
-├── driver-service/
-│ ├── dto/
-│ ├── handler/
-│ ├── model/
-│ ├── repository/
-│ ├── service/
-│ ├── docs/ # swagger outputs
-│ ├── main.go
-│ └── Dockerfile
-│
-├── gateway/
-│ ├── middleware/
-│ ├── main.go
-│ └── Dockerfile
-│
-├── tools/
-│ ├── make_token.go # JWT generation tool
-│ ├── go.mod
-│ └── go.sum
-│
-├── docker-compose.yml
-└── .env.example
+
+<img width="368" height="485" alt="Ekran Resmi 2025-12-06 20 32 14" src="https://github.com/user-attachments/assets/8b639027-df53-4777-808a-547bb6e0fcb2" />
 
 ## Setup
 1) Clone the repo and go to the folder
