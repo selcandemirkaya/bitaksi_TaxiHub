@@ -1,0 +1,22 @@
+# --- Secrets / env ---
+.env
+*.env
+
+# --- Go build outputs ---
+*.exe
+*.out
+*.bin
+*.app
+
+# --- Go cache / deps ---
+/bin/
+/dist/
+/vendor/
+
+# --- Swagger generated ---
+docs/
+
+# --- OS / Editor junk ---
+.DS_Store
+.idea/
+.vscode/

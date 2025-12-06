@@ -1,0 +1,23 @@
+
+services:
+  driver-service:
+    build: ./driver-service
+    container_name: driver-service
+    ports:
+      - "8081:8081"
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  gateway:
+    build: ./gateway
+    container_name: gateway
+    environment:
+      - DRIVER_SERVICE_URL=http://driver-service:8081
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    depends_on:
+      - driver-service
+    restart: unless-stopped
