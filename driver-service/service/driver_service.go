@@ -1,7 +1,5 @@
 package service
 
-//dtodan gelen requesti al, model.Driver'a çevir,date setle, id dön
-
 import (
 	"context"
 	"time"
